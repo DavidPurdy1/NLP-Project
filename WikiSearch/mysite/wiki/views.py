@@ -78,8 +78,8 @@ def get_topics(article_text):
     from nltk.tokenize import word_tokenize
     en_stopwords = stopwords.words('english')
 
-    tci_stopwords = ['class', 'adam', 'mcquistan', 'adammcquistan']
-    article_stopwords = set(en_stopwords + tci_stopwords)
+    custom_stopwords = ['class', 'adam', 'mcquistan', 'adammcquistan']
+    article_stopwords = set(en_stopwords + custom_stopwords)
 
     lmr = WordNetLemmatizer()
 
